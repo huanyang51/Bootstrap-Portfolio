@@ -1,98 +1,19 @@
-/* #title-area {
-  margin: 0 auto;
-  display: block;
-  line-height: 96px;
-  height: 96px;
-  width: 30%;
-  float: left;
-}
-#title {
-  margin: 0 auto;
-  background-color: #4aaaa5;
-  padding: 0px 40px 0px 40px;
-  color: #ffffff;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.header {
-  overflow: hidden;
-  background-color: #ffffff;
-  border-bottom: 2px solid #cccccc;
-}
-.wrap {
-  width: 960px;
-  margin: 0 auto;
-  background-color: #ffffff;
-}
-#main-content {
-  border: 1px solid #dddddd;
-  padding: 25px;
-  width: 910px;
-  margin-top: 30px;
+/* set breakpoints for different viewport 
+not sure if this should be in CSS, because it is giving me errors in VS code.*/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 980px
+);
+/* remove gutters between columns, negtive margin from .row 
+and horizontal padding from all immediate children columns */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 
-#main-content.wrap {
-  margin-top: 0;
-}
-
-nav {
-  margin: 0 auto;
-  line-height: 96px;
-  height: 96px;
-  width: 35%;
-  float: right;
-  background-color: #ffffff;
-} */
-/* ul {
-  margin: 0 auto;
-  padding-right: 0;
-}
-nav li {
-  display: inline;
-  text-align: right;
-  padding-right: 0;
-}
-img#profile-image {
-  float: left;
-  margin: 20px 20px 20px 0;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
-/* a {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #777777;
-  padding: 0 20px 0 20px;
-  border-left: 1px solid #dddddd;
-}
-#nav-start {
-  border-left: 0;
-}
-#nav-end {
-  padding-right: 0;
-} */
-/* .entire-content {
-  background-image: url(../images/trees.png);
-  /* background-image 
-  margin: 0 auto;
-  padding: 30px 0 90px 0;
-}
-.subtitle-area {
-  border-bottom: 2px solid #cccccc;
-}
-.subtitle {
-  color: #4aaaa5;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding-left: 20px;
-} 
-p {
-  color: #777777;
-  font-family: Arial, Helvetica, sans-serif;
-}*/
+/* sticky footer*/
 
 footer {
   height: 50px;
@@ -100,54 +21,6 @@ footer {
   border-top: 8px solid #4aaaa5;
 }
 
-/* style for contact form */
-/* input.inputform {
-  width: 100%;
-  height: 30px;
-}
-input#message {
-  height: 200px;
-  margin-bottom: 10px;
-}
-p.label {
-  margin-bottom: 0;
-} */
-input.submit {
-  background-color: #4aaaa5;
-  padding: 10px 20px;
-  color: #ffffff;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* style for gallery image */
-.gallery-image {
-  height: 320px;
-  width: 240px;
-  margin: 30px 40px 30px 0;
-}
-/* put text on top of gallery image */
-.container {
-  position: relative;
-  float: left;
-}
-.text-block {
-  position: absolute;
-  bottom: 60px;
-  background-color: #4aaaa5;
-  padding: 0 25px;
-  color: #ffffff;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 190px;
-}
-
-/* change text color when hovered */
-a:hover {
-  /* choose a close color with color wheel */
-  color: #4ca8c2;
-}
-/* sticky footer*/
 html,
 body {
   height: 100%;
@@ -170,8 +43,8 @@ body {
   max-width: 20%;
   height: auto;
 }
-.container-fluid {
-  max-width: 80%;
+.container-fluid.content-area {
+  max-width: 90%;
   padding: 0;
 }
 .entire-content {
@@ -202,6 +75,9 @@ a {
   padding: 0 20px 0 20px;
   border-left: 1px solid #dddddd;
 }
+a.nav-link.active {
+  border: none;
+}
 a:hover {
   /* choose a close color with color wheel */
   color: #4ca8c2;
@@ -210,6 +86,9 @@ a:hover {
 ul {
   margin: 0 auto;
   padding-right: 0;
+}
+.whole-content-area {
+  margin: 20px;
 }
 
 .subtitle {
@@ -221,16 +100,16 @@ ul {
 }
 .subtitle-area {
   border-bottom: 2px solid #cccccc;
-  margin: 0;
+  margin: 15px;
 }
 
 img#profile-image {
-  float: left;
-  margin: 20px 20px 20px 0;
+  margin: 20px;
 }
 p {
   color: #777777;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 .content-area {
@@ -238,6 +117,7 @@ p {
 }
 
 /* style for contact page */
+
 .btn {
   background-color: #4aaaa5;
   padding: 10px 20px;
@@ -245,6 +125,10 @@ p {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   border-color: #4aaaa5;
+}
+
+.row.form-area {
+  margin: 20px;
 }
 
 /* style for portfolio page */

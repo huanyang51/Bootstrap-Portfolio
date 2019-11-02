@@ -17,11 +17,13 @@
     <div class="header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4">
+          <div class="col-sm-12 col-md-4 col-lg-4">
             <h1 id="title">Huan Yang</h1>
           </div>
-          <div class="col-8">
-            <ul class="nav justify-content-end">
+          <div class="col-sm-12 col-md-8 col-lg-8">
+            <ul
+              class="nav justify-content-lg-end justify-content-md-end justify-content-sm-center"
+            >
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">About me</a>
               </li>
@@ -37,43 +39,49 @@
       </div>
     </div>
     <div class="entire-content">
-      <div class="container-fluid content-area">
-        <div class="row subtitle-area">
-          <div class="col-4">
-            <h1 class="subtitle">Contact</h1>
+      <div class="row whole-content-area">
+        <div class="container-fluid content-area col-sm-12 col-md-12 col-lg-8">
+          <div class="row subtitle-area">
+            <div class="col-4">
+              <h1 class="subtitle">Contact</h1>
+            </div>
+          </div>
+
+          <div class="row form-area">
+            <div class="col-12">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputName1">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName1"
+                    placeholder="John Smith"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputMessage1">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="8"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="col-12">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputName1">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="exampleInputName1"
-                placeholder="John Smith"
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                placeholder="example@gmail.com"
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputMessage1">Message</label>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="8"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+        <div class="col-sm-0 col-md-0 col-lg-4"></div>
       </div>
     </div>
   </body>
