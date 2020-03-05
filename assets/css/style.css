@@ -1,11 +1,3 @@
-/* set breakpoints for different viewport 
-not sure if this should be in CSS, because it is giving me errors in VS code.*/
-$grid-breakpoints: (
-  xs: 0,
-  sm: 640px,
-  md: 768px,
-  lg: 980px
-);
 /* remove gutters between columns, negtive margin from .row 
 and horizontal padding from all immediate children columns */
 .no-gutters {
@@ -83,6 +75,11 @@ a:hover {
 ul {
   margin: 0 auto;
   padding-right: 0;
+  height: 100%;
+  display: flex;
+}
+.nav-item {
+  align-self: center;
 }
 .whole-content-area {
   margin: 20px;
